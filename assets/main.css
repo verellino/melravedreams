@@ -1,0 +1,112 @@
+.main-content {
+    overflow: visible;
+ }
+#bgvid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-position: 200% 68%;
+}
+.dlogo {
+  position: fixed;
+  width: 90px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.ttlimg {
+  max-width: 70%;
+}
+.viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wtxt {
+  color: white;
+}
+
+.form-vertical {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.form-vertical input {
+    width: 100%;
+}
+form {
+    width: 40%;
+    background:	rgba(255, 255, 255, 0.8);
+    padding: 24px;
+    margin-top: 40px;
+}
+.label--hidden {
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+form input {
+    background: none;
+    border: none;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+form select {
+    width: 100%;
+    padding: 8px;
+    background: none;
+    border: none;
+    margin-bottom: 16px;
+}
+.btn {
+    background: black;
+    color: white;
+    padding: 12px;
+    margin: 0;
+}
+.optbg {
+  background-color: black;
+}
+.invert {
+    filter: invert(100%);
+}
+
+@media (min-width: 768px) {
+  .ttlimg {
+        max-width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    #bgvid {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-position: 50% 50%;
+    }
+    form {
+      width: 92%;
+    }
+    .viewport-header {
+        height: 100%;
+        width: 100%;
+    }
+    .ttlimg {
+        max-width: 90%;
+    }
+}
