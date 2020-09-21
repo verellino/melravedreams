@@ -44,8 +44,7 @@
       // add form-specific values into the data
       formData.formDataNameOrder = JSON.stringify(fields);
       formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-      formData.formGoogleSendEmail
-        = form.dataset.email || ""; // no email by default
+      formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
   
       return {data: formData, honeypot: honeypot};
     }
@@ -70,7 +69,7 @@
       xhr.onreadystatechange = function() {
           if (xhr.readyState === 4 && xhr.status === 200) {
             form.reset();
-            var formElements = form.querySelector(".form-elements")
+            var formElements = form.querySelector(".form-elements");
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
@@ -93,7 +92,7 @@
       for (var i = 0; i < forms.length; i++) {
         forms[i].addEventListener("submit", handleFormSubmit, false);
       }
-    };
+    }
     document.addEventListener("DOMContentLoaded", loaded, false);
   
     function disableAllButtons(form) {
